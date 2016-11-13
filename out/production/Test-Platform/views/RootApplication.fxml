@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="506.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thriyvealgo.controllers.RootApplication">
+
+   
+      
+         <top>
+            <MenuBar prefHeight="28.0" prefWidth="1050.0" BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                        <Menu mnemonicParsing="false" text="Broker Connections">
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#connectTwsAction" text="Interactive Brokers" />
+                          </items>
+                        </Menu>
+                    <MenuItem mnemonicParsing="false" onAction="#handleButtonAction" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Strategy">
+                  <items>
+                        <MenuItem mnemonicParsing="false" onAction="#getTestChart" text="Develop Strategy" />
+                      <MenuItem mnemonicParsing="false" onAction="#runBackTest" text="Backtest Strategies" />
+                        <MenuItem mnemonicParsing="false" onAction="#liveDataAction" text="Run Strategy" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Tools">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#recordTickData" text="Record Tick Data" />
+                        <MenuItem mnemonicParsing="false" onAction="#recordfivesecData" text="Record 5 Sec data" />
+                    <MenuItem mnemonicParsing="false" onAction="#getData" text="RealTime Data" />
+                        <MenuItem mnemonicParsing="false" onAction="#getDataHistorical" text="Historical Data" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Settings">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#contractSetter" text="Set Contract" />
+                        <MenuItem mnemonicParsing="false" onAction="#launchCommand" text="Launch Console" />
+                    </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+      
+</BorderPane>
